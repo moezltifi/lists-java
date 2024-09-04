@@ -37,7 +37,7 @@ public class Employee {
     }
 
     public String toString() {
-        return "ArrayList{" +
+        return "List{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", id=" + id +
