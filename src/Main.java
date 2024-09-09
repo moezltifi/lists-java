@@ -1,4 +1,5 @@
 import lists.Employee;
+import lists.EmployeeDoublyLinkedMist;
 import lists.EmployeeLinkedList;
 import lists.EmployeeNode;
 
@@ -27,7 +28,7 @@ public class Main {
         employeeList2.add(new Employee("Yaser", "Kaser", 448));
         employeeList2.forEach(System.out::println);
 
-        System.out.println("Linked List");
+        System.out.println("Singly Linked List");
         Employee Moez = new Employee("Moez", "Ltifi", 478);
         Employee Mohamed = new  Employee("Mohamed", "Ahmed", 78);
         Employee Jhon = new  Employee("Jhon", "Doe", 44);
@@ -47,5 +48,24 @@ public class Main {
         list.removeFromFront();
         System.out.println(list.getSize());
         list.printList();
+
+
+        System.out.println("Doubly Linked List");
+        EmployeeDoublyLinkedMist DoublyLinkedMist  = new EmployeeDoublyLinkedMist();
+        DoublyLinkedMist.addToFront(Moez);
+        DoublyLinkedMist.addToFront(Mohamed);
+        DoublyLinkedMist.addToFront(Jhon);
+        DoublyLinkedMist.addToFront(Yaser);
+
+        DoublyLinkedMist.printList();
+        System.out.println(DoublyLinkedMist.getSize());
+        Employee Ahmed = new  Employee("Ahmed", "Ahmed", 48);
+        DoublyLinkedMist.addToEnd(Ahmed);
+        DoublyLinkedMist.printList();
+        System.out.println(DoublyLinkedMist.getSize());
+        DoublyLinkedMist.removeFromEnd();
+        DoublyLinkedMist.printList();
+        System.out.println(DoublyLinkedMist.getSize());
+
     }
 }
