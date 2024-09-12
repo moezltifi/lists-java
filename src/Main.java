@@ -79,5 +79,12 @@ public class Main {
             System.out.print("<=>");
 
         }
+        System.out.println("null");
+
+
+        System.out.println("Challenge 1");
+        DoublyLinkedMist.addBefore(Ahmed, Mohamed);
+        DoublyLinkedMist.printList();
+
     }
 }
