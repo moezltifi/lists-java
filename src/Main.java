@@ -3,9 +3,7 @@ import lists.EmployeeDoublyLinkedMist;
 import lists.EmployeeLinkedList;
 import lists.EmployeeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 import static java.util.List.*;
 
@@ -67,5 +65,19 @@ public class Main {
         DoublyLinkedMist.printList();
         System.out.println(DoublyLinkedMist.getSize());
 
+        System.out.println("JDK Linked List Class");
+        LinkedList<Employee> listJDK = new LinkedList<>();
+        listJDK.addFirst(Moez);
+        listJDK.addFirst(Mohamed);
+        listJDK.addFirst(Jhon);
+        listJDK.addFirst(Yaser);
+
+        Iterator iter = listJDK.iterator();
+        while (iter.hasNext()) {
+            System.out.print("Head ->");
+            System.out.print(iter.next());
+            System.out.print("<=>");
+
+        }
     }
 }
